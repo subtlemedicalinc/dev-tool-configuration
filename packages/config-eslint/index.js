@@ -13,7 +13,7 @@ module.exports = {
 		"eslint:recommended",
 		"airbnb",
 		"prettier",
-	]
+	],
 
 	rules: {
 		"no-await-in-loop": "warn",

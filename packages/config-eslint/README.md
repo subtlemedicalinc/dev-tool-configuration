@@ -9,13 +9,15 @@ The ESLint configuration, which includes support for TypeScript.
 Include the following as a top-level field in your `package.json`:
 
 ```
-"eslintConfig": {
-	"extends": "@subtlemedicalinc",
-  "parserOptions": {
-    "tsconfigRootDir": ".",
-    "project": ["./tsconfig.json"],
-  },
-}
+  "eslintConfig": {
+    "extends": "@subtlemedicalinc",
+    "parserOptions": {
+      "tsconfigRootDir": ".",
+      "project": [
+        "./tsconfig.json"
+      ]
+    }
+  }
 ```
 
 Then install it:

@@ -12,7 +12,7 @@
   },
   "prettier": "@subtlemedicalinc/config-prettier",
   "eslintConfig": {
-    "extends": "@subtlemedicalinc"
+    "extends": "@subtlemedicalinc/eslint-config"
   },
   "dependencies": {
     "@subtlemedicalinc/config-prettier": "file:packages/config-prettier",
