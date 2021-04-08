@@ -1,0 +1,20 @@
+{
+  "npmClient": "yarn",
+  "packages": [
+    "packages/*"
+  ],
+  "version": "1.0.1",
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "*.spec.*",
+        "*.test.*",
+        "dist",
+        "*.md",
+        "__test__"
+      ],
+      "message": "chore(release): publish",
+      "registry": "https://npm.pkg.github.com"
+    }
+  }
+}

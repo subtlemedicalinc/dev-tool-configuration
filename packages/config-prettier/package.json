@@ -1,0 +1,22 @@
+{
+  "name": "@subtlemedical/config-prettier",
+  "version": "1.0.1",
+  "description": "Prettier config",
+  "keywords": [
+    "prettier"
+  ],
+  "author": "Robert Fischer <robert@subtlemedical.com>",
+  "homepage": "https://github.com/subtlemedicalinc/dev-tool-configuration#readme",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subtlemedicalinc/dev-tool-configuration.git"
+  },
+  "bugs": {
+    "url": "https://github.com/subtlemedicalinc/dev-tool-configuration/issues"
+  }
+}
