@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -o pipefail
+set -exu
+
+cd "$(dirname "$0")/.."
+
+PKG_NAME="$1"
+
+npx lerna create @subtlemedicalinc/config-$1

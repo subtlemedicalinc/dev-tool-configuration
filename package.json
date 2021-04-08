@@ -1,0 +1,21 @@
+{
+  "name": "dev-tool-configuration",
+  "version": "1.0.0",
+  "description": "Configuration packages for Development Tools",
+  "main": "index.js",
+  "repository": "git@github.com:subtlemedicalinc/dev-tool-configuration.git",
+  "author": "Robert Fischer <robert@subtlemedical.com>",
+  "license": "Unlicensed",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "prettier": "@subtlemedicalinc/config-prettier",
+  "eslintConfig": {
+    "extends": "@subtlemedicalinc"
+  },
+  "dependencies": {
+    "@subtlemedicalinc/config-prettier": "file:packages/config-prettier",
+    "@subtlemedicalinc/eslint-config": "file:packages/config-eslint"
+  }
+}

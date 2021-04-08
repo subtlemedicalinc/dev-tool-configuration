@@ -1,5 +1,5 @@
 {
-  "name": "@subtlemedical/config-prettier",
+  "name": "@subtlemedicalinc/config-prettier",
   "version": "1.0.1",
   "description": "Prettier config",
   "keywords": [
@@ -10,7 +10,8 @@
   "license": "UNLICENSED",
   "main": "index.js",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,6 @@
   },
   "bugs": {
     "url": "https://github.com/subtlemedicalinc/dev-tool-configuration/issues"
-  }
+  },
+  "gitHead": "1cd5886451c73d2b1c66cd92ebd5585fc8effdaa"
 }

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -o pipefail
+set -exu 
+
+cd "$(dirname "$0")/.."
+
+npx lerna init 
+npx lerna bootstrap
+npx lerna link convert

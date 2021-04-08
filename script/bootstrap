@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -o pipefail
+set -exu
+
+cd "$(dirname "$0")/.."
+
+which npx || brew install node || ( echo "Please install 'npx'" && exit -1 )
+
+./script/update

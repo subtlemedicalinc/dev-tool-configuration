@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -o pipefail
+set -exu
+
+cd "$(dirname "$0")/.."
+
+npx lerna clean
+find . -type f -iname '*.log' -delete
