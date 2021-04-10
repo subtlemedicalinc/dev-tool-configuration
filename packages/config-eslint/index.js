@@ -2,11 +2,11 @@
 
 module.exports = {
 	// The minimal baseline configuration goes here
-	plugins: [
-		"promise",
-		"prefer-arrow",
-		"lodash",
-	],
+	ignorePatterns: [
+		"**/dist/**",
+		"**/node_modules/**",
+	]
+	plugins: ["promise", "prefer-arrow", "lodash"],
 	extends: [
 		"plugin:promise/recommended",
 		"plugin:lodash/canonical",
@@ -16,8 +16,9 @@ module.exports = {
 	],
 
 	rules: {
+		quotes: ["warn", "double", { avoidEscape: true }],
 		"no-await-in-loop": "warn",
-		"no-console": [ "warn", { allow: [ "debug", "warn", "error" ] } ],
+		"no-console": ["warn", { allow: ["debug", "warn", "error"] }],
 		"no-loss-of-precision": "error",
 		"no-promise-executor-return": "error",
 		"no-unreachable-loop": "error",
@@ -26,16 +27,16 @@ module.exports = {
 		"array-callback-return": "error",
 		"block-scoped-var": "error",
 		"class-methods-use-this": "warn",
-		"complexity": "warn",
+		complexity: "warn",
 		"consistent-return": "error",
 		"default-case": "warn",
 		"default-case-last": "error",
 		"default-param-last": "error",
 		"grouped-accessor-pairs": "warn",
 		"guard-for-in": "warn",
-		"max-classes-per-file": [ "warn", 3 ],
+		"max-classes-per-file": ["warn", 3],
 		"dot-notation": "warn",
-		"eqeqeq": "error",
+		eqeqeq: "error",
 		"no-alert": "error",
 		"no-caller": "error",
 		"no-constructor-return": "error",
@@ -51,7 +52,15 @@ module.exports = {
 		"no-iterator": "warn",
 		"no-lone-blocks": "warn",
 		"no-loop-func": "error",
-		"no-magic-numbers": [ "warn", { ignore: [ 0, 1, -1, 2 ], ignoreArrayIndexes: true, enforceConst: true, ignoreDefaultValues: true, } ],
+		"no-magic-numbers": [
+			"warn",
+			{
+				ignore: [0, 1, -1, 2],
+				ignoreArrayIndexes: true,
+				enforceConst: true,
+				ignoreDefaultValues: true,
+			},
+		],
 		"no-new-func": "error",
 		"no-new-wrappers": "error",
 		"no-nonoctal-decimal-escape": "error",
@@ -72,11 +81,11 @@ module.exports = {
 		"no-void": "error",
 		"prefer-promise-reject-errors": "error",
 		"prefer-regex-literals": "warn",
-		"radix": "error",
+		radix: "error",
 		"require-unicode-regexp": "warn",
 		"vars-on-top": "error",
 		"wrap-iife": "warn",
-		"yoda": "warn",
+		yoda: "warn",
 		"init-declarations": "warn",
 		"no-label-var": "warn",
 		"no-shadow": "error",
@@ -97,6 +106,9 @@ module.exports = {
 		"sort-imports": "warn",
 		"symbol-description": "warn",
 		"prefer-arrow/prefer-arrow-functions": "warn",
+		"no-underscore-dangle": "warn",
+		"import/prefer-default-export": "off",
+		"no-tabs": "off",
 	},
 
 	// The file-specific overrides of the minimal baseline configuration.
@@ -107,19 +119,18 @@ module.exports = {
 			// Typescript overrides
 			files: ["**/*.ts"],
 			parser: "@typescript-eslint/parser",
-			plugins: [
-				"@typescript-eslint",
-				"tsdoc",
-			],
+			plugins: ["@typescript-eslint"],
 			extends: [
 				"eslint:recommended",
 				"plugin:@typescript-eslint/recommended",
-				'plugin:@typescript-eslint/recommended-requiring-type-checking',
-				"airbnb-typescript"
+				"plugin:@typescript-eslint/recommended-requiring-type-checking",
+				"airbnb-typescript",
+				"prettier", // Make sure this is run last
 			],
 			rules: {
 				"default-case": "off",
-				"tsdoc/syntax": "warn",
+				quotes: "off",
+				"@typescript-eslint/quotes": ["warn", "double", { avoidEscape: true }],
 			},
 		},
 	],
