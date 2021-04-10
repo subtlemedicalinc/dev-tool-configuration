@@ -2,6 +2,10 @@
 
 Modules for configuring development tools (eg: ESLint, Semantic Release, etc.)
 
+## Manual Development Tool Config
+
+How-to guides on integrating development tools are under `./manuals`.
+
 ## JavaScript/TypeScript Development Tools
 
 The JavaScript/TypeScript development tools are in the root of this repository, with particular packages under `./packages`.
