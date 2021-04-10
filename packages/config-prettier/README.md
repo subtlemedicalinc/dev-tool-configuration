@@ -1,4 +1,4 @@
-# `@subtlemedical/prettier`
+# `@subtlemedical/config-prettier`
 
 Configuration for [prettier](https://prettier.io/).
 
@@ -7,7 +7,7 @@ Configuration for [prettier](https://prettier.io/).
 Add this as a top-level field in your `package.json`:
 
 ```
-"prettier": "@subtlemedical/config-prettier"
+"prettier": "@subtlemedicalinc/config-prettier"
 ```
 
 Then do an `npm install --save-dev @subtlemedicalinc/config-prettier` or `yarn add --dev @subtlemedicalinc/config-prettier`.
