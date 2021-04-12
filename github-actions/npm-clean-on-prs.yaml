@@ -1,0 +1,50 @@
+# @format
+
+name: Run 'npm clean' on Pull Requests
+
+on:
+  pull_request:
+    branches-ignore:
+      - release
+    tags-ignore:
+      - v*
+
+jobs:
+  npm-clean:
+    runs-on: ubuntu-latest
+    steps:
+      - name: label attempt
+        uses: andymckay/labeler@master
+        with:
+          add-labels: "being cleaned"
+          remove-labels: "uncleanable,cleaned"
+      - name: check out code
+        uses: actions/checkout
+      - name: cache ~/.npm
+        uses: c-hive/gha-npm-cache
+      - name: install dependencies
+        run: npm ci
+      - id: run-clean
+        name: run the npm clean script
+        run: npm run --if-exists clean
+        continue-on-error: true
+      - name: commit
+        id: commit
+        if: steps.run-clean.outcome == "success"
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "chore(clean): apply 'npm clean' [skip ci]"
+          skip_dirty_check: false
+          skip_fetch: false
+      - name: label success
+        if: steps.commit.outcome == "success"
+        uses: andymckay/labeler@master
+        with:
+          add-labels: "cleaned"
+          remove-labels: "uncleanable,being cleaned"
+      - name: label failure
+        if: 'steps.run-clean.outcome != "success"'
+        uses: andymckay/labeler@master
+        with:
+          add-labels: "uncleanable"
+          remove-labels: "cleaned,being cleaned"

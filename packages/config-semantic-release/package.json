@@ -1,0 +1,26 @@
+{
+  "name": "@subtlemedicalinc/config-semantic-release",
+  "version": "1.0.2",
+  "description": "> TODO: description",
+  "author": "Robert Fischer <robert@subtlemedical.com>",
+  "homepage": "https://github.com/subtlemedicalinc/dev-tool-configuration#readme",
+  "license": "UNLICENSED",
+  "main": "base.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subtlemedicalinc/dev-tool-configuration.git"
+  },
+  "bugs": {
+    "url": "https://github.com/subtlemedicalinc/dev-tool-configuration/issues"
+  },
+  "dependencies": {
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.2.1",
+    "@semantic-release/npm": "^7.1.1",
+    "@semantic-release/release-notes-generator": "^9.0.2",
+    "conventional-changelog-conventionalcommits": "^4.5.0",
+    "lodash": "^4.17.21",
+    "semantic-release-jira-releases": "^0.7.2"
+  }
+}

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -o pipefail
+set -exu
+
+cd "$(dirname "$0")/../.."
+
+brew install gnu-tar
+sudo gem install --no-document fpm
+fpm -help | less
