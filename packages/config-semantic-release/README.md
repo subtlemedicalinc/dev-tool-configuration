@@ -70,6 +70,7 @@ The functionality provided is:
   commits and put them into the release.
 - Publish the `master` branch as the release branch.
 - Publish any branch matching the pattern `^[a-z]{3}/` as a pre-release.
+- Backport from the release branch to the `develop` branch.
 
 ### `npm-library`
 
@@ -85,6 +86,7 @@ the following:
 - The `alpha` and `beta` branches (if either/both exist) are also released as
   prereleases onto the `alpha` and `beta` channel (respectively).
 - Publish the release to the `npm` repository (in our case, GitHub Packages)
+
 
 ## TODOs
 

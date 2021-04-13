@@ -14,5 +14,6 @@ module.exports = {
 		'@semantic-release/git',
 		'@semantic-release/github',
 		'semantic-release-jira-releases',
+		'@saithodev/semantic-release-backmerge',
 	],
 }
