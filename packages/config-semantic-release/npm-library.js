@@ -16,8 +16,8 @@ module.exports = _.mergeWith(
 		plugins: ["@semantic-release/npm"],
 	},
 	function customizer(leftVal, rightVal) {
-		if (_.isArray(objValue)) {
-			return _.concat(objValue, srcValue);
+		if (_.isArray(leftVal)) {
+			return _.concat(leftVal, rightVal);
 		}
 	}
 );
