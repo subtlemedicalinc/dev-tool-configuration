@@ -23,19 +23,8 @@ with particular packages under `./packages`.
 
 ### Using These Packages
 
-To use these packages, you'll need to
-[authenticate to GitHub Packages](https://docs.github.com/en/packages/guides/configuring-npm-for-use-with-github-packages#authenticating-to-github-packages).
-The simplest way to do this is to create a file named `~/.npmrc` with the
-following contents:
-
-```
-//npm.pkg.github.com/:_authToken=GITHUB_TOKEN
-@subtlemedicalinc:registry=https://npm.pkg.github.com
-```
-
-Replace `GITHUB_TOKEN` with your
-[GitHub personal access token](https://github.com/settings/tokens). Double-check
-that you've enabled SubtleMedical SSO for that access token.
+To use any of these packages, you'll need to
+[authenticate to GitHub Packages](https://docs.github.com/en/packages/guides/configuring-npm-for-use-with-github-packages#authenticating-to-github-packages).  We have [a README for this](manuals/github-packages.md).
 
 For integrating the shared config of specific tools, see its `README.md` file in
 the respective folder under `./packages`.
