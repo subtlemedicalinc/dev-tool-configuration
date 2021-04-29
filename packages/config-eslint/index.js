@@ -6,7 +6,7 @@ module.exports = {
 		"**/dist/**",
 		"**/node_modules/**",
 	]
-	plugins: ["promise", "prefer-arrow", "lodash"],
+	plugins: ["promise", "lodash"],
 	extends: [
 		"plugin:promise/recommended",
 		"plugin:lodash/canonical",
