@@ -1,6 +1,6 @@
 {
   "name": "@subtlemedicalinc/eslint-config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Shared configuration for ESLint (including TypeScript support)",
   "author": "Robert Fischer <robert@subtlemedical.com>",
   "homepage": "https://github.com/subtlemedicalinc/dev-tool-configuration#readme",
