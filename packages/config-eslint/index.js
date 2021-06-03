@@ -5,7 +5,7 @@ module.exports = {
 	ignorePatterns: [
 		"**/dist/**",
 		"**/node_modules/**",
-	]
+	],
 	plugins: ["promise", "lodash"],
 	extends: [
 		"plugin:promise/recommended",
