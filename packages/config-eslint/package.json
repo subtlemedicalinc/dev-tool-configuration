@@ -25,6 +25,7 @@
     "eslint-plugin-lodash": "^7.2.0",
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-tsdoc": "^0.2.11",
-    "typescript": "3.3.1 - 4.2.x"
+    "typescript": "3.3.1 - 4.2.x",
+    "eslint-plugin-prefer-arrow": "^1.2.3"
   }
 }
