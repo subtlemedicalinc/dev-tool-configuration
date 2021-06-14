@@ -2,10 +2,7 @@
 
 module.exports = {
 	// The minimal baseline configuration goes here
-	ignorePatterns: [
-		"**/dist/**",
-		"**/node_modules/**",
-	],
+	ignorePatterns: ["**/dist/**", "**/node_modules/**"],
 	plugins: ["promise", "lodash"],
 	extends: [
 		"plugin:promise/recommended",
@@ -105,7 +102,6 @@ module.exports = {
 		"prefer-template": "warn",
 		"sort-imports": "warn",
 		"symbol-description": "warn",
-		"prefer-arrow/prefer-arrow-functions": "warn",
 		"no-underscore-dangle": "warn",
 		"import/prefer-default-export": "off",
 		"no-tabs": "off",
