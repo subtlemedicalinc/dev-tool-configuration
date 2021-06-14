@@ -1,6 +1,6 @@
 {
   "name": "@subtlemedicalinc/eslint-config",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Shared configuration for ESLint (including TypeScript support)",
   "author": "Robert Fischer <robert@subtlemedical.com>",
   "homepage": "https://github.com/subtlemedicalinc/dev-tool-configuration#readme",
@@ -23,9 +23,9 @@
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-lodash": "^7.2.0",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-tsdoc": "^0.2.11",
-    "typescript": "3.3.1 - 4.2.x",
-    "eslint-plugin-prefer-arrow": "^1.2.3"
+    "typescript": "3.3.1 - 4.2.x"
   }
 }
