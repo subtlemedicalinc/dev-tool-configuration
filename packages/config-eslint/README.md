@@ -38,5 +38,5 @@ projects provided", then
 
 ### Typescript Version Note
 
-This package has a `peerDependency` of `typescript@3.3.1 - 4.2.x`, because of
+This package has a dependency on `typescript@3.3.1 - 4.3.x` because of
 [the supported TypeScript version as of this writing](https://github.com/typescript-eslint/typescript-eslint#supported-typescript-version).

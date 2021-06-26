@@ -102,9 +102,11 @@ module.exports = {
 		"prefer-template": "warn",
 		"sort-imports": "warn",
 		"symbol-description": "warn",
-		"no-underscore-dangle": "warn",
+		"no-underscore-dangle": "off",
 		"import/prefer-default-export": "off",
 		"no-tabs": "off",
+		"iterators/generators": "off",
+		"no-restricted-syntax": "off",
 	},
 
 	// The file-specific overrides of the minimal baseline configuration.
@@ -127,6 +129,7 @@ module.exports = {
 				"default-case": "off",
 				quotes: "off",
 				"@typescript-eslint/quotes": ["warn", "double", { avoidEscape: true }],
+				"@typescript-eslint/restrict-template-expressions": "off",
 			},
 		},
 	],
